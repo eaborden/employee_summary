@@ -2,6 +2,8 @@
 
 ## GitHub Repository
 
+https://github.com/eaborden/employee_summary
+
 ## Project Description
 A command line application to capture the details of the team manager and team members.  This will allow someone to quickly access, through a web interface, each staff's office number, email, and / or GitHub.  
 
