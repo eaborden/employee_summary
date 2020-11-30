@@ -13,9 +13,8 @@ A command line application to capture the details of the team manager and team m
 [Project Video Demonstration](#project-video-demonstration)
 
 ## Required Elements
-[Inquirer package](https://www.npmjs.com/package/inquirer)
-[jest](https://jestjs.io/) /
-Using classes and constructors to extend on the employee class
+[Inquirer package](https://www.npmjs.com/package/inquirer) /
+[jest package](https://jestjs.io/)
 
 ## Requirements
 Command line interface (CLI) application using the inquirer node package.  Develop classes for the three employee classifications.  Each class builds off an employee class using constructors.  Run tests using the jest package.  Start the program by running node app.js.  After the user is finished entering the employees an html file is created showing the details for each employee by classification.
