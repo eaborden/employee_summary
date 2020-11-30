@@ -31,11 +31,11 @@ Command line interface (CLI) application using the inquirer node package.  Devel
 7. Open the HML page to view the team.
 
 ## Project Images
-Image 1:
+Image 1: PAssed Testing Results
 
 ![tests](https://github.com/eaborden/employee_summary/blob/master/public/images/tests.PNG?raw=true)
 
-Image 2:
+Image 2: Team HTML view
 
 ![team](https://github.com/eaborden/employee_summary/blob/master/public/images/team.PNG?raw=true)
 
