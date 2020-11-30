@@ -44,6 +44,7 @@ function addTeam() {
                     getIntern();
                     break;
                 case "No more to enter":
+                    console.log("Go see your team!")
                     renderEmployees();
                     break;
             }
@@ -53,12 +54,6 @@ function getManager() {
     inquirer
         .prompt([
 
-            // {
-            //     type: "input",
-            //     name: "role",
-            //     message: "What is the this position's role?",
-            //     default: "manager",
-            // },
             {
                 type: "input",
                 name: "name",
@@ -98,23 +93,23 @@ function getEngineer() {
                 message: "What is the engineer's name?",
             },
             {
-                type: "input",
-                name: "engineerEmail",
-                message: "What is the engineer's email?",
-            },
-            {
                 type: "number",
                 name: "engineerId",
                 message: "What is the engineer's Id?",
             },
             {
                 type: "input",
+                name: "engineerEmail",
+                message: "What is the engineer's email?",
+            },
+                   {
+                type: "input",
                 name: "engineerGithub",
                 message: "What is the engineer's GitHub?",
             },
         ])
         .then((answer) => {
-            const newEngineer = new Engineer(answer.engineerName, answer.engineerEmail, answer.engineerId, answer.engineerGithub);
+            const newEngineer = new Engineer(answer.engineerName, answer.engineerId, answer.engineerEmail, answer.engineerGithub);
             team.push(newEngineer);
             addTeam()
         })
@@ -154,7 +149,6 @@ function getIntern() {
 
 
 function renderEmployees() {
-    console.log(team);
     let html = render(team)
     fs.writeFile(outputPath, html, (err) => {
         if (err) throw err;
